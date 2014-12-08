@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core
+QT       += core network
 
 QT       -= gui
 
@@ -16,7 +16,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    classes/mainctrl.cpp
+    classes/mainctrl.cpp \
+    classes/network/qserversocket.cpp \
+    classes/network/qwinsockclient.cpp
 
 HEADERS += \
-    classes/mainctrl.h
+    classes/mainctrl.h \
+    classes/network/qserversocket.h \
+    classes/network/qwinsockclient.h
